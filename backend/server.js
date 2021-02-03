@@ -44,3 +44,11 @@ if (process.env.NODE_ENV === 'production') {
     res.send('Route is connected')
   })
 }
+
+const PORT = process.env.PORT || 5000
+app.listen(
+  PORT,
+  console.log(
+    `Server is running in ${process.env.NODE_ENV} mode on port ${PORT}`
+  )
+)
